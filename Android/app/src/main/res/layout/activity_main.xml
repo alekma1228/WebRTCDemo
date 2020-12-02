@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. Please input Socket server URL and your id and then click Register button to register you account." />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. Please input friend's id and then click call to video call with friend." />
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Socket Server URL" />
+        <EditText
+            android:id="@+id/txt_socket_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="http://127.1.1.1:8080"
+            android:singleLine="true"
+            android:lines="1"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Id" />
+        <EditText
+            android:id="@+id/txt_my_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please input your id"
+            android:singleLine="true"
+            android:lines="1"/>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend Id" />
+        <EditText
+            android:id="@+id/txt_friend_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please input friend's id"
+            android:singleLine="true"
+            android:lines="1"/>
+        <TextView
+            android:id="@+id/btn_register"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@android:color/holo_blue_light"/>
+        <TextView
+            android:id="@+id/btn_call"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="@android:color/holo_blue_light"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

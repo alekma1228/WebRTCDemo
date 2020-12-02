@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WebRTCDemo</string>
+    <string name="crash_toast_text">We\'re sorry but WebRTCDemo\' unexpectedly crashed. Please let us know and fix this error by sending this report to us.</string>
+    <string name="channel_name">WebRTCDemo Notification</string>
+</resources>
